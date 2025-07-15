@@ -1,0 +1,60 @@
+@import "./styles/fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --containerLine:black;
+  --black:#141414;
+  --purple:#A66CFF;
+
+
+}
+
+.container{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1444px;
+  @media (min-width: 768px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+}
+
+  
+
+
+.nav-item {
+  outline: 1px solid var(--purple);
+  color: var(--purple);
+  position: relative;
+  border-radius: 8px;
+}
+.new-button {
+  position: relative;
+  font-weight: 570;
+  font-size: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 0.75rem;
+  padding-right: 6px;
+  transition: all 0.7s;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.new-button:hover {
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+}
