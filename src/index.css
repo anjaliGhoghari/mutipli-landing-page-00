@@ -52,7 +52,7 @@
   padding-right: 6px;
   transition: all 0.7s;
   border-radius: 8px;
-  border: 1px solid black;
+  
 }
 .new-button:hover {
   background-color: var(--purple);
