@@ -37,7 +37,7 @@ function Header() {
     }
   }, [activeIndex]);
   return (
-    <header className="sticky z-50 bg-[#F5F5F5] top-[40px] font-saans ">
+    <header className="sticky z-50 bg-[#F5F5F5] bg-white/70 backdrop-blur-[45px] top-0 font-saans ">
       <div className="container">
         <div className="flex justify-between w-full  py-6 sm:py-10 items-center ">
           <img src={logo} alt="logo" className="max-w-[120px]" />

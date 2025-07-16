@@ -77,7 +77,7 @@ function Testimonial() {
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
         >
-          <h2 className={`${styles.heading3} max-w-[426px] leading-[32px]  mb-14`}>
+          <h2 className={`${styles.heading3} max-w-[426px]  mb-14`}>
             Trusted by startups and the world's largest companies
           </h2>
           
@@ -96,7 +96,7 @@ function Testimonial() {
             }
           `}
               >
-                <p className={`max-w-[316px] tracking-wide font-[380] text-[#4A4A4A] ${item.size==="large"?"mb-[270px] text-2xl tracking-wide font-[570]":"mb-[68px] text-base"}`}>
+                <p className={`max-w-[316px] leading-[20px] font-[380] text-[#4A4A4A] ${item.size==="large"?"mb-[270px] text-2xl leading-[26px] tracking-tight font-[570]":"mb-[68px] text-base"}`}>
                   {item.content}
                 </p>
                 <div className="flex justify-between items-center">

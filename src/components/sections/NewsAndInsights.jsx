@@ -38,6 +38,13 @@ const news = [
     description:
       "Learn about Multipli's journey so far in 2025 and what is in store for the future - DeBank, WBTC and so on.",
   },
+  {
+    poster: poster_1,
+    title: "Weekly Summary:July First Week",
+    description:
+      "Learn about Multipli's journey so far in 2025 and what is in store for the future - DeBank, WBTC and so on.",
+  },
+  
 ];
 function NewsAndInsights() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -92,7 +99,13 @@ function NewsAndInsights() {
           <div className="flex flex-wrap items-center justify-start font-saans gap-2">
             {activeIndex === 0 &&
               press.map((item, idx) => (
-                <div key={idx} className="flex flex-col">
+                <div
+                  key={idx}
+                  data-aos="fade-up"
+                  data-aos-delay={idx * 100}
+                  data-aos-duration="700"
+                  className="flex flex-col"
+                >
                   <div className="mb-5">
                     <img className="rounded-2xl" src={item.poster} />
                   </div>
@@ -109,7 +122,13 @@ function NewsAndInsights() {
 
             {activeIndex === 1 &&
               news.map((item, idx) => (
-                <div key={idx} className="flex flex-col">
+                <div
+                  key={idx}
+                  data-aos="fade-up"
+                  data-aos-delay={idx * 100}
+                  data-aos-duration="700"
+                  className="flex flex-col"
+                >
                   <div className="mb-5">
                     <img className="rounded-2xl" src={item.poster} />
                   </div>

@@ -2,7 +2,7 @@ function Whitebutton() {
   
 
     return (
-      <button className="text-white bg-transparent border border-white py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[8px] tracking-[-0.16px] text-base font-[570] font-saans"
+      <button className="text-white bg-transparent border border-white py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans"
         
       >
         <span>
