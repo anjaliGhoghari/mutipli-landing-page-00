@@ -10,6 +10,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Saans TRIAL', sans-serif;
+}
 :root{
   --containerLine:black;
   --black:#141414;
@@ -36,12 +39,7 @@
   
 
 
-.nav-item {
-  outline: 1px solid var(--purple);
-  color: var(--purple);
-  position: relative;
-  border-radius: 8px;
-}
+
 .new-button {
   position: relative;
   font-weight: 570;
@@ -51,8 +49,7 @@
   padding-left: 0.75rem;
   padding-right: 6px;
   transition: all 0.7s;
-  border-radius: 8px;
-  
+  border-radius: 8px; 
 }
 .new-button:hover {
   background-color: var(--purple);

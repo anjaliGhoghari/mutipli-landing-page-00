@@ -1,61 +1,81 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from "react";
 import logo from "../../assets/icons/logo.svg";
-import Button from '../Button';
+import Button from "../Button";
 
- const navLinks = [
-  { 
-    id: "home",
-    title: "Home",
+const navItems = [
+  {
+    id: "docs",
+    title: "Docs",
   },
   {
-    id: "partners",
-    title: "Partners",
+    id: "blogs",
+    title: "Blogs",
   },
 
   {
-    id: "podcast",
-    title: "Podcast",
+    id: "ecosystem",
+    title: "Ecosystem",
   },
+
   {
-    id: "careers",
-    title: "Careers",
+    id: "contact",
+    title: "Contact",
   },
-  {
-      id: "contact",
-      title: "Contact",
-    },
-  
 ];
 function Header() {
-  const [active, setActive] = useState("Home");
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [boxStyle, setBoxStyle] = useState({});
+  const navRefs = useRef([]);
+
+  useEffect(() => {
+    const current = navRefs.current[activeIndex];
+    if (current) {
+      setBoxStyle({
+        width: current.offsetWidth,
+        left: current.offsetLeft,
+      });
+    }
+  }, [activeIndex]);
   return (
-    <header className="sticky z-50 bg-[#F5F5F5] top-0 font-saans ">
-        <div className="container">
+    <header className="sticky z-50 bg-[#F5F5F5] top-[40px] font-saans ">
+      <div className="container">
         <div className="flex justify-between w-full  py-6 sm:py-10 items-center ">
-              <img src={logo} alt="logo" className="max-w-[120px]" />
-              <nav>
-                <ul className="text-[#797979] hidden lg:flex leading-7 text-[16px] font-[380] gap-8 cursor-pointer">
-                  {navLinks.map((nav) => (
-                    <li key={nav.id}>
-                      <button
-                      onClick={() => setActive(nav)}
-                        className={`hover:text-[#A66CFF] ${
-                          active === nav ? "nav-item" : ""
-                        }`}
-                      >
-                        <a href={`#${nav.id}`} className="py-4 px-2">
-                          {nav.title}
-                        </a>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-              <Button/>
+          <img src={logo} alt="logo" className="max-w-[120px]" />
+          
+          <nav className="relative">
+            <div className="relative flex gap-8">
+              {/* Sliding Box */}
+              <div
+                className="absolute bottom-[0px] h-8 bg-black rounded-[32px] transition-all duration-300"
+                style={{
+                  width: `${boxStyle.width}px`,
+                  left: `${boxStyle.left}px`,
+                }}
+              ></div>
+
+              {/* Nav Items */}
+              {navItems.map((item, index) => (
+                <a href={`#${item.id}`}
+                  key={index}
+                  ref={(el) => (navRefs.current[index] = el)}
+                  onClick={() => setActiveIndex(index)}
+                  className={`relative z-10  hidden lg:flex text-[16px] font-[380] cursor-pointer py-1 px-2 transition-colors duration-300 ${
+                    activeIndex === index
+                      ? "text-white"
+                      : "text-[#797979] hover:text-bgBlack"
+                  }`}
+                >
+                  {item.title}
+                </a>
+              ))}
             </div>
+          </nav>
+          <Button title="Deploy assets " />
+          
         </div>
-        </header>
-  )
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

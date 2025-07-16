@@ -77,7 +77,7 @@ function Testimonial() {
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
         >
-          <h2 className={`${styles.heading3}  mb-14`}>
+          <h2 className={`${styles.heading3} max-w-[426px] leading-[32px]  mb-14`}>
             Trusted by startups and the world's largest companies
           </h2>
           

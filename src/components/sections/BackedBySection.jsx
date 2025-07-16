@@ -16,7 +16,7 @@ function BackedBySection() {
             className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-[96px] bg-no-repeat bg-right `}
             style={{ backgroundImage: `url(${Backedbysection})` }}
           >
-            <h2 className={`${styles.darkheading3}  mb-3`}>
+            <h2 className={`${styles.darkheading3}   mb-3`}>
               Backed by the best
             </h2>
             <p className={`${styles.darkparagraph} leading-normal mb-14`}>
@@ -27,7 +27,7 @@ function BackedBySection() {
             <img src={sequola}/>
             <img src={spartan}/>
             <img src={pantera}/>
-            <img src={starkware}/>
+            <img src={starkware}/>      
              </div>
           </div>
           

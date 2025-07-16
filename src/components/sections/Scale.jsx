@@ -21,7 +21,7 @@ function Scale() {
           <div className="border-x border-containerLine py-12">
           <div className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-20 `}>
               <h2 className={`${styles.darkheading3}  mb-3`}>
-                Built for stability.Designed for scale.Open to all.
+                Built for stability. Designed for scale. Open to all.
               </h2>
               <p
                 className={`${styles.darkparagraph} mb-14`}

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/style";
 import logo from "../../assets/icons/logo.svg";
 import footer from "../../assets/images/footer.png";
+import Button from "../Button"
 
 
 const footerLinks = [
@@ -100,14 +101,9 @@ function Footer() {
                   className="w-full border-b bg-transparent border-black/10 focus:outline-none placeholder-[#B0B0B0] text-base pb-2"
                 />
 
-                <button
-                  type="submit"
-                  className="flex items-center gap-1 border-[1.5px] border-black pr-[6px] leading-[1] pl-[12px] py-[6px] rounded-lg font-[570] hover:bg-[#A66CFF]
-                  hover:border-[#A66CFF] hover:scale-110 hover:text-white transition"
-                >
-                  Sign up
-                  <span className="text-xl">→</span>
-                </button>
+                
+               
+                <Button title="Sing up"/>
                 
               </form>
               

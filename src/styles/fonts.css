@@ -1,36 +1,35 @@
 @font-face {
-    font-family: 'Saans TRIAL';
-    src: url('/fonts/Saans-TRIAL-Regular.woff2') format('woff2'),
-         url('/fonts/Saans-TRIAL-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Saans TRIAL';
-    src: url('/fonts/Saans-TRIAL-Medium.woff2') format('woff2'),
-         url('/fonts/Saans-TRIAL-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Saans TRIAL';
-    src: url('/fonts/Saans-TRIAL-Semibold.woff2') format('woff2'),
-         url('/fonts/Saans-TRIAL-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Saans TRIAL';
-    src: url('/fonts/Saans-TRIAL-Bold.woff2') format('woff2'),
-         url('/fonts/Saans-TRIAL-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  
+  font-family: "Saans TRIAL";
+  src: url("../assets/fonts/Saans-TRIAL-Regular.ttf") format("truetype"),
+    url("../assets/fonts/Saans-TRIAL-Regular.otf") format("opentype");
+  font-weight: 380;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saans TRIAL";
+  src: url("../assets/fonts/Saans-TRIAL-Medium.ttf") format("truetype"),
+    url("../assets/fonts/Saans-TRIAL-Medium.otf") format("opentype");
+  font-weight: 570;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saans TRIAL";
+  src: url("../assets/fonts/Saans-TRIAL-Semibold.ttf") format("truetype"),
+    url("../assets/fonts/Saans-TRIAL-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saans TRIAL";
+  src: url("../assets/fonts/Saans-TRIAL-Bold.ttf") format("truetype"),
+    url("../assets/fonts/Saans-TRIAL-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

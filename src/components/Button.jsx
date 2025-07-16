@@ -1,17 +1,14 @@
-function Button({ variant = "black" }) {
-  const isWhite = variant === "white";
+function Button({title}) {
+  
 
   return (
-    <button
-      className={`new-button border group transition-all duration-700
-        ${isWhite ? "border-white text-white" : "border-black text-black"}
-      `}
+    <button className="text-white bg-[#1d1d1d] py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] text-base font-[550] font-saans"
+      
     >
       <span>
-        Deploy assets{" "}
+       {title}
         <svg
-          className={`inline font-saans transition-all duration-700
-            ${isWhite ? "fill-white group-hover:fill-white" : "fill-black group-hover:fill-black"}
+          className={`inline font-saans transition-all duration-700 fill-white
           `}
           width="20"
           height="20"

@@ -6,6 +6,7 @@ import GraphSection from '../components/sections/GraphSection'
 import TestedBySection from '../components/sections/TestedBySection'
 import BackedBySection from '../components/sections/BackedBySection'
 import Testimonial from '../components/sections/Testimonial'
+import NewsAndInsights from '../components/sections/NewsAndInsights'
 
 function Home() {
   return (
@@ -16,7 +17,9 @@ function Home() {
     <GraphSection/>
     <TestedBySection/>
     <Testimonial/>
+    <NewsAndInsights/>
     <BackedBySection/>
+   
    </>
   )
 }

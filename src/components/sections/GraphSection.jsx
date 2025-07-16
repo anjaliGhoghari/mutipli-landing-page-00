@@ -1,6 +1,28 @@
 import React from "react";
 import styles from "../../styles/style";
 import graph from "../../assets/images/graph.png";
+import btn1 from "../../assets/icons/bitcoin.svg";
+import btn2 from "../../assets/icons/usdc.svg";
+import btn3 from "../../assets/icons/usdt.svg";
+
+const buttons =[
+  {
+    id:1,
+    logo:btn1,
+    title:"xBTC",
+  },
+  {
+    id:2,
+    logo:btn2,
+    title:"xUSDC",
+  },
+  {
+    id:1,
+    logo:btn3,
+    title:"xUSDT",
+  }
+]
+
 
 function GraphSection() {
   return (
@@ -11,7 +33,14 @@ function GraphSection() {
         >
           <div className="flex items-center justify-between">
             <div className="">
-              <h2 className={`${styles.heading3} max-w-[426px]  mb-3`}>
+              <div className="flex gap-2 mb-8 items-center">
+                {buttons.map((btn,idx)=>(
+                  <div id={idx} className="flex gap-2 cursor-pointer bg-bgBlack text-white/90 py-2 pr-3 pl-2 rounded-[56px]" >
+                    <img className="inline" src={btn.logo}/> {btn.title}
+                  </div>
+                ))}
+              </div>
+              <h2 className={`${styles.heading3} max-w-[426px] mb-3`}>
                 Risk Adjusted Daily Yield, xUSDC 12.13% APY
               </h2>
               <p className={`${styles.paragraph} max-w-[426px] mb-14`}>

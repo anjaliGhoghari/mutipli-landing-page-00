@@ -14,7 +14,7 @@ export default {
         containerLine:"#EBEBEB",
       },
       fontFamily: {
-        saans: ['Saans TRIAL', 'sans-serif'],
+        saans: ['"Saans TRIAL"', 'sans-serif'],
       },
     },
     screens: {
