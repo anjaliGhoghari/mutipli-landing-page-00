@@ -28,7 +28,7 @@ function TestedBySection() {
     <section className="">
       <div className="line-container">
         <div className="border-x border-containerLine">
-          <div className={`${styles.paddindY} bg-bgBlack  rounded-[16px]`}>
+          <div className={`py-[88px] bg-bgBlack  rounded-[16px]`}>
             <div className={`${styles.paddindX}`}>
               <h2 className={`${styles.darkheading3} text-[40px]  mb-3`}>
                 Along with the best
