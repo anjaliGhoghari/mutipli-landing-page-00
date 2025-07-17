@@ -60,7 +60,7 @@ function NewsAndInsights() {
     }
   }, [activeIndex]);
   return (
-    <section className="border-b border-containerLine ">
+    <section id="blogs" className="border-b border-containerLine ">
       <div className="container ">
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
@@ -104,7 +104,7 @@ function NewsAndInsights() {
                   data-aos="fade-up"
                   data-aos-delay={idx * 100}
                   data-aos-duration="700"
-                  className="flex flex-col"
+                  className="flex cursor-pointer flex-col"
                 >
                   <div className="mb-5">
                     <img className="rounded-2xl" src={item.poster} />
@@ -127,7 +127,7 @@ function NewsAndInsights() {
                   data-aos="fade-up"
                   data-aos-delay={idx * 100}
                   data-aos-duration="700"
-                  className="flex flex-col"
+                  className="flex cursor-pointer flex-col"
                 >
                   <div className="mb-5">
                     <img className="rounded-2xl" src={item.poster} />

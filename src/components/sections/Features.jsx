@@ -90,7 +90,13 @@ function Features() {
                       ))}
                     </div>
                   ) : (
-                    <div className="bg-[#C48BEF] rounded-lg py-2 px-3 mt-[39px] font-[380] leading-[140%] text-[#1d1d1d]">U.S APY-4% VS Multipli APY-12.19%</div>
+                    
+                    <div className="flex gap-2 mt-[39px] justify-start items-center">
+                    <div className="bg-[#FF8170] items-center text-[#1d1d1d] leading-[22.4px font-[380] font-saans rounded-[96px] py-2 px-3 ">U.S APY-4%</div>
+                    <span className="leading-[22.4px] font-[380] font-saans group-hover:text-white">VS</span>
+                    <div className="bg-[#70FFDE] text-[#1d1d1d] leading-[22.4px font-[380] font-saans rounded-[96px] py-2 px-3 ">Multipli APY-12.19%</div>
+                    </div>
+                    
                   )}
                 </div>
               </div>

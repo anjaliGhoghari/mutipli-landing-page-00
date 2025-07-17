@@ -36,10 +36,22 @@ function Header() {
       });
     }
   }, [activeIndex]);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+    useEffect(() => {
+      const onScroll = () => {
+        setIsScrolled(window.scrollY > 50);
+      };
+      window.addEventListener("scroll", onScroll);
+      return () => window.removeEventListener("scroll", onScroll);
+    }, []);
   return (
-    <header className="sticky z-50 bg-[#F5F5F5] bg-white/70 backdrop-blur-[45px] top-0 font-saans ">
-      <div className="container">
-        <div className="flex justify-between w-full  py-6 sm:py-10 items-center ">
+    <header className="sticky z-50 bg-[#F5F5F5]  top-0 font-saans ">
+      <div className= {`mx-auto transition-all duration-300 ${
+          isScrolled ? "max-w-[1340px] bg-[#FAF7FF] py-8 border border-[#E5D4FC] rounded-b-[16px] px-[88px]" : "container py-10 bg-[#F5F5F5]"
+        }`}>
+        <div className="flex justify-between w-full items-center ">
           <img src={logo} alt="logo" className="max-w-[120px]" />
           
           <nav className="relative">
@@ -59,7 +71,7 @@ function Header() {
                   key={index}
                   ref={(el) => (navRefs.current[index] = el)}
                   onClick={() => setActiveIndex(index)}
-                  className={`relative z-10  hidden lg:flex text-[16px] font-[380] cursor-pointer py-1 px-2 transition-colors duration-300 ${
+                  className={`relative z-10 hidden lg:flex text-[16px] font-[380] cursor-pointer py-1 px-[12px] transition-colors duration-300 ${
                     activeIndex === index
                       ? "text-white"
                       : "text-[#797979] hover:text-bgBlack"

@@ -37,7 +37,7 @@ const footerLinks = [
 ];
 function Footer() {
   return (
-    <footer className="border-b border-containerLine bg-[#F5F5F5] ">
+    <footer id="contact" className="border-b border-containerLine bg-[#F5F5F5] ">
       <div className="container ">
         <div
           className={`${styles.paddindX} pt-[128px] border-x border-containerLine`}
@@ -49,7 +49,7 @@ function Footer() {
             Yields from the world’s top asset managers made accessible.
           </h2>
           <p className={`${styles.paragraph} mb-[88px]`}>
-            The smart gateway to institutional-grade, delta-neutral crypto
+            The smart gateway to institutional-grade,<br/> delta-neutral crypto
             yields.
           </p>
           <div className="flex items-center justify-between flex-col gap-2 lg:flex-row">
@@ -64,7 +64,7 @@ function Footer() {
                       {footerLinks.slice(index, index + 4).map((item) => (
                         <div key={item.name} className="w-[200px] sm:w-[250px]">
                           <div className="relative w-full h-[1px] bg-black/10" />
-                          <p className="mt-4 text-left text-[#4A4A4A] text-[16px]">
+                          <p className="mt-4 text-left hover:text-black/50 cursor-pointer text-[#4A4A4A] text-[16px]">
                             {item.name}
                           </p>
                         </div>
@@ -86,25 +86,19 @@ function Footer() {
                   placeholder="Full Name"
                   className="w-full border-b bg-transparent border-black/10 focus:outline-none  placeholder-[#B0B0B0] text-base pb-2"
                 />
-
                 <input
                   type="email"
                   placeholder="Email"
                   required
                   className="w-full border-b bg-transparent border-black/10 focus:outline-none  placeholder-[#B0B0B0] text-base pb-2"
                 />
-
                 <input
                   type="text"
                   placeholder="Organization"
                   required
                   className="w-full border-b bg-transparent border-black/10 focus:outline-none placeholder-[#B0B0B0] text-base pb-2"
                 />
-
-                
-               
                 <Button title="Sing up"/>
-                
               </form>
               
             </div>

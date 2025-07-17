@@ -21,21 +21,24 @@ const testimonials = [
   {
     id: 2,
     size: "normal",
-    content:"The Multipli team is glad to be a part of onboarding the next wave of institutional capital into DeFi. Projected yields of 25-30% are no joke.",
-    name: "Shaaran",
-    post: "CEO / Multipli",
-    profile: person_2,
-  },
-  { 
-    id: 3, size: "large",
     content:
       "The Multipli team is glad to be a part of onboarding the next wave of institutional capital into DeFi. Projected yields of 25-30% are no joke.",
     name: "Shaaran",
     post: "CEO / Multipli",
+    profile: person_2,
+  },
+  {
+    id: 3,
+    size: "large",
+    content:
+      "The Multipli team is glad to be a part of onboarding The Multipli team is glad to be a part of onboard the next wave of institutional capital into DeFi. Projected yields of 25-30% are no joke.",
+    name: "Shaaran",
+    post: "CEO / Multipli",
     profile: person_3,
   },
-  { 
-    id: 4, size: "large",
+  {
+    id: 4,
+    size: "large",
     content:
       "The Multipli team is glad to be a part of onboarding the next wave of institutional capital into DeFi. Projected yields of 25-30% are no joke.",
     name: "Shaaran",
@@ -80,14 +83,18 @@ function Testimonial() {
           <h2 className={`${styles.heading3} max-w-[426px]  mb-14`}>
             Trusted by startups and the world's largest companies
           </h2>
-          
+
           <div className="grid font-saans grid-cols-3 gap-4">
             {testimonials.map((item) => (
               <div
                 key={item.id}
                 className={`
-            rounded-2xl
-             ${item.size==="large"?"bg-[#FAF7FF] border border-[#E5D4FC]":"bg-white"}
+            rounded-2xl flex flex-col justify-between
+             ${
+               item.size === "large"
+                 ? "bg-[#FAF7FF] border border-[#E5D4FC]"
+                 : "bg-white"
+             }
             p-8 
             ${
               item.size === "large"
@@ -95,10 +102,16 @@ function Testimonial() {
                 : ""
             }
           `}
-              >
-                <p className={`max-w-[316px] leading-[20px] font-[380] text-[#4A4A4A] ${item.size==="large"?"mb-[270px] text-2xl leading-[26px] tracking-tight font-[570]":"mb-[68px] text-base"}`}>
+              ><div> <p
+                  className={`max-w-[316px] leading-[20px] font-[380] text-[#4A4A4A] ${
+                    item.size === "large"
+                      ? "mb-[290px] text-2xl leading-[26px] tracking-tight font-[570]"
+                      : "mb-[68px] text-base"
+                  }`}
+                >
                   {item.content}
-                </p>
+                </p></div>
+               
                 <div className="flex justify-between items-center">
                   <div>
                     <p className="text-black/70 text-base font-[380]">

@@ -35,7 +35,7 @@ function HighlightSections() {
             {highlightcard.map((card, idx) => (
               <div
                 key={idx}
-                className={`${styles.paddindX} sticky top-[20%] bg-bgBlack rounded-[16px] py-[225px] bg-no-repeat w-full`}
+                className={`${styles.paddindX} sticky top-[15%] bg-bgBlack rounded-[16px] py-[225px] bg-no-repeat w-full`}
                 style={{ backgroundImage: `url(${card.backgroundImage})` }}
               >
                 <h2 className={`${styles.darkheading3} max-w-[493px]  mb-3`}>

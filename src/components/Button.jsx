@@ -2,7 +2,7 @@ function Button({title}) {
   
 
   return (
-    <button className="text-white bg-[#1d1d1d] py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] text-base font-[550] font-saans"
+    <button className="text-white hover:scale-110 bg-[#1d1d1d] py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] text-base font-[550] font-saans"
       
     >
       <span>

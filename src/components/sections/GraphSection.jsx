@@ -35,9 +35,9 @@ function GraphSection() {
             <div className="">
               <div className="flex gap-2 mb-8 items-center">
                 {buttons.map((btn,idx)=>(
-                  <div id={idx} className="flex gap-2 cursor-pointer bg-bgBlack text-white/90 py-2 pr-3 pl-2 rounded-[56px]" >
+                  <a id={idx} className="flex gap-2  hover:scale-110 transition-all duration-300 cursor-pointer bg-bgBlack text-white/90 py-2 pr-3 pl-2 rounded-[56px]" >
                     <img className="inline" src={btn.logo}/> {btn.title}
-                  </div>
+                  </a>
                 ))}
               </div>
               <h2 className={`${styles.heading3} max-w-[426px] mb-3`}>
