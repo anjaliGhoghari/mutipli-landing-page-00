@@ -49,7 +49,7 @@ function Header() {
   return (
     <header className="sticky z-50 border-b border-containerline bg-[#F5F5F5]  top-0 font-saans ">
       <div className= {`mx-auto transition-all duration-300 ${
-          isScrolled ? "max-w-[1340px] bg-[#FAF7FF] py-8 border border-[#E5D4FC] rounded-b-[16px] px-[88px]" : "container py-10 bg-[#F5F5F5]"
+          isScrolled ? "max-w-[1340px] py-8 border border-containerLine rounded-b-[16px] px-[88px]" : "container py-10 bg-[#F5F5F5]"
         }`}>
         <div className="flex justify-between w-full items-center ">
           <img src={logo} alt="logo" className="max-w-[120px]" />
