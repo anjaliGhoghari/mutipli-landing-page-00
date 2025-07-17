@@ -28,14 +28,14 @@ const highlightcard = [
 ];
 function HighlightSections() {
   return (
-    <section className="relative border-b border-containerLine ">
-      <div className="container ">
+    <section className="relative">
+      <div className="line-container ">
         <div className="border-x border-containerLine py-12">
-          <div className="space-y-10 h-[210vh] relative">
+          <div className="space-y-12 h-[220vh] relative">
             {highlightcard.map((card, idx) => (
               <div
                 key={idx}
-                className={`${styles.paddindX} sticky top-[15%] bg-bgBlack rounded-[16px] py-[225px] bg-no-repeat w-full`}
+                className={`${styles.paddindX} sticky top-[20%] bg-bgBlack rounded-[16px] py-[225px] bg-no-repeat w-full`}
                 style={{ backgroundImage: `url(${card.backgroundImage})` }}
               >
                 <h2 className={`${styles.darkheading3} max-w-[493px]  mb-3`}>

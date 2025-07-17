@@ -16,8 +16,8 @@ function Scale() {
 
   return (
     <>
-      <section ref={ref} className="border-b border-containerLine ">
-        <div className="container ">
+      <section ref={ref} className="">
+        <div className="line-container ">
           <div className="border-x border-containerLine py-12">
           <div className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-20 `}>
               <h2 className={`${styles.darkheading3}  mb-3`}>

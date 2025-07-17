@@ -25,9 +25,9 @@ const logos = [
 ];
 function TestedBySection() {
   return (
-    <section className="border-b border-containerLine ">
-      <div className="container">
-        <div className="border-x  border-containerLine py-12">
+    <section className="">
+      <div className="line-container">
+        <div className="border-x border-containerLine py-12">
           <div className={`${styles.paddindY} bg-bgBlack  rounded-[16px]`}>
             <div className={`${styles.paddindX}`}>
               <h2 className={`${styles.darkheading3} text-[40px]  mb-3`}>
@@ -40,25 +40,16 @@ function TestedBySection() {
             </div>
             <div className="w-full overflow-hidden">
               <div className="flex w-max animate-scroll">
-                {/* First Set */}
-                {logos.map((logo, idx) => (
-                  <img
-                    key={`first-${idx}`}
-                    src={logo}
-                    className="mr-2 flex-shrink-0"
-                    alt={`logo-${idx}`}
-                  />
-                ))}
-
-                {/* Second Set (duplicate) */}
-                {logos.map((logo, idx) => (
-                  <img
-                    key={`second-${idx}`}
-                    src={logo}
-                    className="mr-2 flex-shrink-0"
-                    alt={`logo-duplicate-${idx}`}
-                  />
-                ))}
+                {[...Array(100)].map((_, repeatIdx) =>
+                  logos.map((logo, idx) => (
+                    <img
+                      key={`loop-${repeatIdx}-${idx}`}
+                      src={logo}
+                      className="mr-2 flex-shrink-0"
+                      alt={`logo-${idx}`}
+                    />
+                  ))
+                )}
               </div>
             </div>
           </div>

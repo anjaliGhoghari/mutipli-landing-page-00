@@ -75,8 +75,8 @@ const testimonials = [
 ];
 function Testimonial() {
   return (
-    <section className="border-b border-containerLine ">
-      <div className="container ">
+    <section className=" ">
+      <div className="line-container">
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
         >

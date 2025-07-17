@@ -9,8 +9,8 @@ import Backedbysection from "../../assets/images/backedbysection.png"
 
 function BackedBySection() {
   return (
-    <section className="border-b border-containerLine ">
-      <div className="container ">
+    <section>
+      <div className="line-container">
         <div className="border-x border-containerLine py-12">
           <div
             className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-[96px] bg-no-repeat bg-right `}

@@ -10,7 +10,7 @@ export default {
         },
       },
       animation: {
-        scroll: "scroll 50s linear infinite",
+        scroll: "scroll 5000s linear infinite",
       },
       colors: {
         black_90:"rgba(0, 0, 0, 0.9)",

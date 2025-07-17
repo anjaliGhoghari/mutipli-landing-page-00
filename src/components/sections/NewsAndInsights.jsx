@@ -60,10 +60,10 @@ function NewsAndInsights() {
     }
   }, [activeIndex]);
   return (
-    <section id="blogs" className="border-b border-containerLine ">
-      <div className="container ">
+    <section id="blogs" className="">
+      <div className="line-container">
         <div
-          className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
+          className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine `}
         >
           <div className="flex justify-between items-center mb-12">
             <div className="relative">
@@ -92,7 +92,7 @@ function NewsAndInsights() {
                 ))}
               </div>
             </div>
-            <button className="text-white bg-[#1d1d1d] py-[6px] flex items-center px-4 leading-[20px]  rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans">
+            <button className="text-white transition-all duration-500 hover:scale-110 bg-[#1d1d1d] py-[6px] flex items-center px-4 leading-[20px]  rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans">
               View more
             </button>
           </div>

@@ -47,7 +47,7 @@ function Header() {
       return () => window.removeEventListener("scroll", onScroll);
     }, []);
   return (
-    <header className="sticky z-50 bg-[#F5F5F5]  top-0 font-saans ">
+    <header className="sticky z-50 border-b border-containerline bg-[#F5F5F5]  top-0 font-saans ">
       <div className= {`mx-auto transition-all duration-300 ${
           isScrolled ? "max-w-[1340px] bg-[#FAF7FF] py-8 border border-[#E5D4FC] rounded-b-[16px] px-[88px]" : "container py-10 bg-[#F5F5F5]"
         }`}>
@@ -58,7 +58,7 @@ function Header() {
             <div className="relative flex gap-8">
               {/* Sliding Box */}
               <div
-                className="absolute bottom-[0px] h-8 bg-black rounded-[32px] transition-all duration-300"
+                className="absolute bottom-[0px] hidden lg:block  h-8 bg-black rounded-[32px] transition-all duration-300"
                 style={{
                   width: `${boxStyle.width}px`,
                   left: `${boxStyle.left}px`,
