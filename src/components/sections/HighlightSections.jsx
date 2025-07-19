@@ -16,7 +16,7 @@ const highlightcard = [
     backgroundImage: highlight_2,
     heading: "Proprietary Predictive Engine for Smart Fund Allocation",
     content:
-      "Earn reliable, high quality yield backed by the largest and safest delta-neutral funds in crypto. Built with institutional-grade transparency.",
+    "AlphaIQ™, our patented intelligence engine, dynamically allocates capital to top-performing funds using predictive analytics, maximizing yield and capital efficiency.",
   },
   {
     id: 1,
@@ -35,14 +35,14 @@ function HighlightSections() {
             {highlightcard.map((card, idx) => (
               <div
                 key={idx}
-                className={`${styles.paddindX} sticky top-[20%] bg-bgBlack rounded-[16px] py-[225px] bg-no-repeat w-full`}
+                className={`${styles.paddindX} sticky top-[20%] bg-bgBlack rounded-[16px] py-[250px] bg-no-repeat w-full`}
                 style={{ backgroundImage: `url(${card.backgroundImage})` }}
               >
                 <h2 className={`${styles.darkheading3} max-w-[493px]  mb-3`}>
                   {card.heading}
                 </h2>
                 <p
-                  className={`${styles.darkparagraph} max-w-[493px] tracking-wide mb-14`}
+                  className={`${styles.darkparagraph} max-w-[480px] tracking-wide`}
                 >
                   {card.content}
                 </p>
