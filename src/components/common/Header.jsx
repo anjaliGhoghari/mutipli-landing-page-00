@@ -4,7 +4,7 @@ import Button from "../Button";
 
 const navItems = [
   {
-    id: "docs",
+    id: "https://docs.multipli.fi/",
     title: "Docs",
   },
   {
@@ -47,15 +47,15 @@ function Header() {
       return () => window.removeEventListener("scroll", onScroll);
     }, []);
   return (
-    <header className="sticky z-50 border-b border-containerline bg-[#F5F5F5]  top-0 font-saans ">
+    <header className="sticky z-50 bg-[#F5F5F5]  top-0 font-saans ">
       <div className= {`mx-auto transition-all duration-300 ${
-          isScrolled ? "max-w-[1340px] py-8 border border-containerLine rounded-b-[16px] px-[88px]" : "container py-10 bg-[#F5F5F5]"
+          isScrolled ? `px-[8.5rem] max-w-[1444px] border border-containerLine py-8` : "py-10 line-container"
         }`}>
         <div className="flex justify-between w-full items-center ">
-          <img src={logo} alt="logo" className="max-w-[120px]" />
+          <a href="#"><img src={logo}  alt="logo" className="max-w-[120px]" /></a>
           
           <nav className="relative">
-            <div className="relative flex gap-8">
+            <div className="relative flex gap-2">
               {/* Sliding Box */}
               <div
                 className="absolute bottom-[0px] hidden lg:block  h-8 bg-black rounded-[32px] transition-all duration-300"
@@ -67,7 +67,7 @@ function Header() {
 
               {/* Nav Items */}
               {navItems.map((item, index) => (
-                <a href={`#${item.id}`}
+                <a href={item.id.startsWith("http") ? item.id : `#${item.id}`}
                   key={index}
                   ref={(el) => (navRefs.current[index] = el)}
                   onClick={() => setActiveIndex(index)}

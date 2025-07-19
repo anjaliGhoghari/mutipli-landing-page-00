@@ -10,7 +10,8 @@ export default {
         },
       },
       animation: {
-        scroll: "scroll 5000s linear infinite",
+        scroll: "scroll 3000s linear infinite",
+      
       },
       colors: {
         black_90:"rgba(0, 0, 0, 0.9)",
@@ -34,7 +35,16 @@ export default {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [
+    // ✅ Custom paused utility
+    function ({ addUtilities }) {
+      addUtilities({
+        ".paused": {
+          "animation-play-state": "paused",
+        },
+      });
+    },
+  ],
 }
 
 

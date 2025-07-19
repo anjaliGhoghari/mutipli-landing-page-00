@@ -2,13 +2,13 @@ function Whitebutton() {
   
 
     return (
-      <button className="text-white transition-all duration-500 hover:scale-110 bg-transparent border border-white py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans"
+      <button className="hover:text-[#141414] hover:bg-white hover:border hover:border-[#141414] group  text-white group  transition-all duration-500  bg-transparent border border-white py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans"
         
       >
         <span>
           Deploy assets{" "}
           <svg
-            className={`inline font-saans transition-all duration-700 fill-white
+            className={`inline font-saans transition-all duration-700 fill-white group-hover:fill-black
             `}
             width="20"
             height="20"

@@ -8,31 +8,31 @@ import Button from "../Button"
 const footerLinks = [
   {
     name: "Terms and conditions",
-    link: "https://",
+    link: "https://docs.multipli.fi/legal/terms-of-use",
   },
   {
     name: "Privacy policy",
-    link: "https://",
+    link: "https://docs.multipli.fi/legal/privacy-policy",
   },
   {
     name: "X.com",
-    link: "https://",
+    link: "https://x.com/multiplifi",
   },
   {
     name: "Linkedin",
-    link: "https://",
+    link: "https://www.linkedin.com/company/multipli-fi/",
   },
   {
     name: "Press",
-    link: "https://",
+    link: "https://blog.multipli.fi/",
   },
   {
     name: "Blog",
-    link: "https://",
+    link: "https://blog.multipli.fi/",
   },
   {
     name: "Docs",
-    link: "https://",
+    link: "https://docs.multipli.fi/",
   },
 ];
 function Footer() {
@@ -42,7 +42,7 @@ function Footer() {
         <div
           className={`${styles.paddindX} pt-[128px] border-x border-containerLine`}
         >
-          <img src={logo} className="mb-12" />
+          <a href="#"><img src={logo}  alt="logo" className="max-w-[120px] mb-12" /></a>
           <h2
             className={`font-saans font-[570] text-black_90 text-[40px] leading-[48px]   max-w-[633px] mb-3`}
           >
@@ -64,9 +64,10 @@ function Footer() {
                       {footerLinks.slice(index, index + 4).map((item) => (
                         <div key={item.name} className="w-[200px] sm:w-[250px]">
                           <div className="relative w-full h-[1px] bg-black/10" />
-                          <p className="mt-4 text-left hover:text-black/50 cursor-pointer text-[#4A4A4A] text-[16px]">
+                          <a href={item.link}><p className="mt-4 text-left hover:text-black cursor-pointer text-[#797979] text-[16px]">
                             {item.name}
                           </p>
+                          </a>
                         </div>
                       ))}
                     </div>
