@@ -68,7 +68,7 @@ function Features() {
           </p>
           <div className="flex flex-wrap justify-between items-center ">
             {cardDetail.map((card) => (
-              <div className="w-[577px] h-[322px] mb-4 bg-white hover:bg-bgBlack transition-all duration-500 p-12 rounded-2xl group ">
+              <div className="w-[577px] sm:h-[322px] h-[350px] mb-4 bg-white hover:bg-bgBlack transition-all duration-500 sm:p-12 p-6 rounded-2xl group ">
                 <div className="flex items-start flex-col justify-start">
                   <img src={card.logo} className="h-[32px] mb-4" />
                   <p className="text-2xl font-[380] mb-2 group-hover:text-white">

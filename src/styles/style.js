@@ -2,11 +2,11 @@
 const styles = {
     
     paddindY:
-      "py-[128px]",
+      "sm:py-[128px] py-[64px]",
       paddindX:
-      "px-[88px]",
+      "sm:px-[88px] px-[32px]",
     heading1:
-      "text-customWhite font-saans font-[570] tracking-[-1.28px] text-[64px] leading-[95%]",
+      "text-customWhite font-saans font-[570] tracking-[-1.28px] sm:text-[64px] text-[48px] leading-[95%]",
     paragraph:
       "text-[rgba(0,0,0,0.7)] font-saans font-[380] tracking-[-0.2px] text-[20px] leading-[100%]",
     heading3:

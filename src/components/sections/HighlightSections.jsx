@@ -30,12 +30,12 @@ function HighlightSections() {
   return (
     <section className="relative">
       <div className="line-container ">
-        <div className="border-x border-containerLine py-12">
+        <div className="border-x border-containerLine sm:py-12 py-6">
           <div className="space-y-12 h-[220vh] relative">
             {highlightcard.map((card, idx) => (
               <div
                 key={idx}
-                className={`${styles.paddindX} sticky top-[20%] bg-bgBlack rounded-[16px] py-[250px] bg-no-repeat w-full`}
+                className={`${styles.paddindX} sticky top-[20%] bg-bgBlack rounded-[16px] sm:py-[250px] py-[52px] bg-no-repeat w-full`}
                 style={{ backgroundImage: `url(${card.backgroundImage})` }}
               >
                 <h2 className={`${styles.darkheading3} max-w-[493px]  mb-3`}>
@@ -45,6 +45,9 @@ function HighlightSections() {
                   className={`${styles.darkparagraph} max-w-[480px] tracking-wide`}
                 >
                   {card.content}
+                <div className="w-full mt-9 block sm:hidden">
+                  <img  src={card.backgroundImage}/>
+                  </div>
                 </p>
               </div>
             ))}

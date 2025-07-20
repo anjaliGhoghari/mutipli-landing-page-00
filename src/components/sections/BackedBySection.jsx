@@ -12,26 +12,39 @@ function BackedBySection() {
     <section>
       <div className="line-container">
         <div className="border-x border-containerLine py-12">
-          <div
-            className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-[96px] bg-no-repeat bg-right `}
-            style={{ backgroundImage: `url(${Backedbysection})` }}
-          >
-            <h2 className={`${styles.darkheading3}   mb-3`}>
-              Backed by the best
-            </h2>
-            <p className={`${styles.darkparagraph} leading-normal mb-14`}>
-              Multipli is building the future of high grade institutional
-              yields.
-            </p>
-            <div className="flex gap-14 flex-wrap items-center justify-start">
-            <img src={sequola}/>
-            <img src={spartan}/>
-            <img src={pantera}/>
-            <img src={starkware}/>      
-             </div>
-          </div>
-          
-        </div>
+  <div
+    className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-[96px] bg-no-repeat bg-right hidden sm:block`}
+    style={{ backgroundImage: `url(${Backedbysection})` }}
+  >
+    <h2 className={`${styles.darkheading3} mb-3`}>Backed by the best</h2>
+    <p className={`${styles.darkparagraph} leading-normal mb-14`}>
+      Multipli is building the future of high grade institutional yields.
+    </p>
+    <div className="flex gap-14 flex-wrap items-center justify-start">
+      <img src={sequola} />
+      <img src={spartan} />
+      <img src={pantera} />
+      <img src={starkware} />
+    </div>
+  </div>
+
+  {/* Small screen version (image after text) */}
+  <div className={`${styles.paddindX} bg-bgBlack rounded-[16px] pb-0 pt-[72px] sm:hidden`}>
+    <h2 className={`${styles.darkheading3} mb-3`}>Backed by the best</h2>
+    <p className={`${styles.darkparagraph} leading-normal mb-14`}>
+      Multipli is building the future of high grade institutional yields.
+    </p>
+    <div className="flex gap-14 flex-wrap items-center justify-start mb-10">
+      <img src={sequola} />
+      <img src={spartan} />
+      <img src={pantera} />
+      <img src={starkware} />
+    </div>
+    {/* 👇 Image shown below the text only on small screens */}
+    <img src={Backedbysection} alt="Backed By Illustration" className="w-full h-auto" />
+  </div>
+</div>
+
       </div>
     </section>
   );

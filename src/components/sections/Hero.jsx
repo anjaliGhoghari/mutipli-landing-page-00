@@ -23,9 +23,9 @@ function Hero() {
       background: 'linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)',
     }}
   />
-  <div className="relative z-20 mt-[88px] mx-[88px] flex items-start justify-start flex-col h-full">
+  <div className="relative z-20 sm:mt-[88px] mt-[40px] sm:mx-[88px] mx-[40px] flex items-start justify-start flex-col h-full">
     <h1 className={`${styles.heading1} max-w-[700px] mb-3`}>Yields from the world’s top asset managers made accessible.</h1>
-    <p className={`${styles.paragraph} !text-[#F7F9FC] max-w-[360px] mb-14`}>The smart gateway to institutional-grade, delta-neutral crypto yields.</p>
+    <p className={`${styles.paragraph} !text-[#F7F9FC] max-w-[360px] sm:mb-14 mb-7`}>The smart gateway to institutional-grade, delta-neutral crypto yields.</p>
     <Whitebutton/>
     <Partners/>
   </div>

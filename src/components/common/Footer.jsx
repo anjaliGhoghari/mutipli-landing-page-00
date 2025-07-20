@@ -40,19 +40,19 @@ function Footer() {
     <footer id="contact" className="border-b border-containerLine bg-[#F5F5F5] ">
       <div className="container ">
         <div
-          className={`${styles.paddindX} pt-[128px] border-x border-containerLine`}
+          className={`${styles.paddindX} sm:pt-[128px] pt-[64px] border-x border-containerLine`}
         >
-          <a href="#"><img src={logo}  alt="logo" className="max-w-[120px] mb-12" /></a>
+          <a href="#"><img src={logo}  alt="logo" className="max-w-[120px] sm:mb-12 mb-8 " /></a>
           <h2
-            className={`font-saans font-[570] text-black_90 text-[40px] leading-[48px]   max-w-[633px] mb-3`}
+            className={`font-saans font-[570] text-black_90 sm:text-[40px] text-[32px]  sm:leading-[48px] leading-[38px]   max-w-[633px]  mb-3`}
           >
             Yields from the world’s top asset managers made accessible.
           </h2>
-          <p className={`${styles.paragraph} mb-[88px]`}>
+          <p className={`${styles.paragraph} sm:mb-[88px] mb-10 `}>
             The smart gateway to institutional-grade,<br/> delta-neutral crypto
             yields.
           </p>
-          <div className="flex items-center justify-between flex-col gap-2 lg:flex-row">
+          <div className="flex sm:items-center items-start  justify-between flex-col sm:gap-2 gap-9 lg:flex-row">
             <div className="flex flex-col ss:flex-row justify-end gap-6 sm:gap-8">
               {footerLinks.map((link, index) => {
                 if (index % 4 === 0) {
@@ -108,7 +108,7 @@ function Footer() {
           <img
             src={footer}
             alt="footer"
-            className="w-full mr-[100px] max-w-[1167px] h-auto object-contain"
+            className="w-full sm:mr-[100px] mr-0 max-w-[1167px] h-auto object-contain"
           />
         </div>
         </div>

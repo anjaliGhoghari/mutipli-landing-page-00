@@ -48,8 +48,15 @@ function GraphSection() {
                 delta-neutral funds, earning daily yield and enabling secure
                 DeFi staking for more returns.
               </p>
+              <div  style={{
+                background: `linear-gradient(0deg, #E1BAFF 0%, #E1BAFF 100%), url(${graph}) lightgray -0.571px 0px / 101.033% 100% no-repeat`,
+                backgroundBlendMode: "color, normal",
+                mixBlendMode: "hard-light",
+              }} className="block md:hidden">
+              <img src={graph} alt="Graph" />
+              </div>
             </div>
-            <div
+            <div className="hidden md:block"
               style={{
                 background: `linear-gradient(0deg, #E1BAFF 0%, #E1BAFF 100%), url(${graph}) lightgray -0.571px 0px / 101.033% 100% no-repeat`,
                 backgroundBlendMode: "color, normal",

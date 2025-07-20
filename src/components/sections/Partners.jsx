@@ -38,7 +38,7 @@ import Rockaway from "../../assets/icons/Rockaway.svg";
 
 function Partners() {
   return (
-    <div className="flex flex-wrap items-center justify-between w-full mt-[86px] ">
+    <div className="flex flex-wrap items-center justify-between w-full sm:mt-[86px] mt-9">
                 {partners.map((partners) => (
                   <div
                     key={partners.id}

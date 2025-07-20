@@ -44,7 +44,6 @@ const news = [
     description:
       "Learn about Multipli's journey so far in 2025 and what is in store for the future - DeBank, WBTC and so on.",
   },
-  
 ];
 function NewsAndInsights() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -65,7 +64,7 @@ function NewsAndInsights() {
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine `}
         >
-          <div className="flex justify-between items-center mb-12">
+          <div className="flex justify-between items-center sm:mb-12 mb-8">
             <div className="relative">
               <div className="relative flex gap-4">
                 {/* Sliding Box */}
@@ -81,7 +80,7 @@ function NewsAndInsights() {
                     key={index}
                     ref={(el) => (navRefs.current[index] = el)}
                     onClick={() => setActiveIndex(index)}
-                    className={`relative z-10 hidden lg:flex text-[24px] font-[570] cursor-pointer py-1 px-2 transition-colors duration-300 ${
+                    className={`relative z-10 flex sm:text-[24px] text-[18px] font-[570] cursor-pointer py-1 px-2 transition-colors duration-300 ${
                       activeIndex === index
                         ? "text-black/90"
                         : "text-black/20 hover:text-bgBlack"
@@ -92,7 +91,10 @@ function NewsAndInsights() {
                 ))}
               </div>
             </div>
-            <a href="https://blog.multipli.fi/" className="text-white hover:text-black border hover:border-black border-white hover:bg-white transition-all duration-500 bg-[#1d1d1d] py-[6px] flex items-center px-4 leading-[20px]  rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans">
+            <a
+              href="https://blog.multipli.fi/"
+              className="text-white hidden sm:flex hover:text-black border hover:border-black border-white hover:bg-white transition-all duration-500 bg-[#1d1d1d] py-[6px]  items-center px-4 leading-[20px]  rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans"
+            >
               View more
             </a>
           </div>
@@ -104,7 +106,7 @@ function NewsAndInsights() {
                   data-aos="fade-up"
                   data-aos-delay={idx * 100}
                   data-aos-duration="700"
-                  className="flex cursor-pointer flex-col"
+                  className="flex cursor-pointer mb-6 sm:mb-0 flex-col"
                 >
                   <div className="mb-5">
                     <img className="rounded-2xl" src={item.poster} />
@@ -127,7 +129,7 @@ function NewsAndInsights() {
                   data-aos="fade-up"
                   data-aos-delay={idx * 100}
                   data-aos-duration="700"
-                  className="flex cursor-pointer flex-col"
+                  className="flex cursor-pointer mb-6 sm:mb-0 flex-col"
                 >
                   <div className="mb-5">
                     <img className="rounded-2xl" src={item.poster} />
@@ -142,6 +144,14 @@ function NewsAndInsights() {
                   </div>
                 </div>
               ))}
+          </div>
+          <div className="flex justify-center mt-2 sm:hidden">
+            <a
+              href="https://blog.multipli.fi/"
+              className="text-white hover:text-black border hover:border-black border-white hover:bg-white transition-all duration-500 bg-[#1d1d1d] py-[6px] px-4 leading-[20px] rounded-[32px] tracking-[-0.16px] text-base font-[570] font-saans inline-flex items-center"
+            >
+              View more
+            </a>
           </div>
         </div>
       </div>
