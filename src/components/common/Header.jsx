@@ -51,7 +51,7 @@ function Header() {
       return () => window.removeEventListener("scroll", onScroll);
     }, []);
   return (
-    <header className="sticky z-50 bg-[#F5F5F5] sm:top-0 top-4 font-saans ">
+    <header className="sticky z-50 bg-[#F5F5F5]  top-0 font-saans ">
       <div className= {`mx-auto transition-all duration-300 ${
           isScrolled ? `sm:px-[8.5rem] px-[1rem] max-w-[1444px] border border-containerLine py-8` : "py-10 line-container"
         }`}>

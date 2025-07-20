@@ -75,7 +75,7 @@ const testimonials = [
 ];
 function Testimonial() {
   return (
-    <section className=" ">
+    <section className=" hidden sm:block">
       <div className="line-container">
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
