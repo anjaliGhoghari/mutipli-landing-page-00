@@ -6,7 +6,8 @@ import Whitebutton from '../Whitebutton'
 function Hero() {
   return (
     <section className="container">
-    <div className="relative w-full h-screen overflow-hidden max-h-[643px] rounded-[16px]">
+    <div className="relative w-full h-screen overflow-hidden sm:max-h-[643px]
+    max-h-[678px] rounded-[16px]">
     <video
     autoPlay
     loop

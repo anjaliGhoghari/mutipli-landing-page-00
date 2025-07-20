@@ -30,7 +30,7 @@ function HighlightSections() {
   return (
     <section className="relative">
       <div className="line-container ">
-        <div className="border-x border-containerLine sm:py-12 py-6">
+        <div className="border-x border-containerLine sm:py-12 py-6 mb-9">
           <div className="space-y-12 h-[220vh] relative">
             {highlightcard.map((card, idx) => (
               <div
