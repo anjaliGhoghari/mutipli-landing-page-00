@@ -110,7 +110,7 @@ function Header() {
       </div>
       </div>
           </nav>
-          <div className="hidden">
+          <div className="hidden sm:block">
           <Button  title="Deploy assets " />
           </div>
         </div>
