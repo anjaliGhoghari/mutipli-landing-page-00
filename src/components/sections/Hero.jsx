@@ -8,7 +8,7 @@ function Hero() {
     <section className="container">
     {/* <div className="relative w-full h-screen overflow-hidden sm:
     max-h-[560px] rounded-[16px]"> */}
-    <div className="relative w-full h-[70vh] sm:h-[64vh] md:h-screen overflow-hidden 
+    <div className="relative w-full h-[80vh] sm:h-[64vh] md:h-screen overflow-hidden 
      rounded-[16px] sm:max-h-[720px] md:max-h-[643px]">
     <video
     autoPlay
