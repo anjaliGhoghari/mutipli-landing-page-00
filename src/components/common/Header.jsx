@@ -94,7 +94,7 @@ function Header() {
          <div
         className={`${
           toggle ? "flex" : "hidden"
-        } p-6 bg-black-gradient absolute top-20 right-0 mx-4 rounded-xl my-2 min-w-[140px] sidebar`}
+        } p-6 bg-black-gradient absolute top-10 right-0 rounded-xl  min-w-[140px] sidebar`}
       >
         <ul className=" list-none flex justify-end flex-col flex-1 items-left">
           {navItems.map((item, index) => (
