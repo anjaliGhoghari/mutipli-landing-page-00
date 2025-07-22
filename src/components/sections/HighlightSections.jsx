@@ -16,7 +16,7 @@ const highlightcard = [
     backgroundImage: highlight_2,
     heading: "Proprietary Predictive Engine for Smart Fund Allocation",
     content:
-    "AlphaIQ™, our patented intelligence engine, dynamically allocates capital to top-performing funds using predictive analytics, maximizing yield and capital efficiency.",
+      "AlphaIQ™, our patented intelligence engine, dynamically allocates capital to top-performing funds using predictive analytics, maximizing yield and capital efficiency.",
   },
   {
     id: 1,
@@ -53,38 +53,39 @@ function HighlightSections() {
             ))}
           </div> */}
           <div className="space-y-12 h-auto relative">
-  {highlightcard.map((card, idx) => (
-    <div
-      key={idx}
-      className={`
+            {highlightcard.map((card, idx) => (
+              <div
+                key={idx}
+                className={`
         ${styles.paddindX} 
         bg-bgBlack rounded-[16px] 
         bg-no-repeat w-full
         py-[52px] sm:py-[250px]
         sticky top-[15%] sm:top-[20%]
       `}
-      style={{ backgroundImage: `url(${card.backgroundImage})` }}
-    >
-      <h2 className={`${styles.darkheading3} max-w-[493px] mb-3`}>
-        {card.heading}
-      </h2>
+                style={{ backgroundImage: `url(${card.backgroundImage})` }}
+              >
+                <h2 className={`${styles.darkheading3} max-w-[493px] mb-3`}>
+                  {card.heading}
+                </h2>
 
-      <p className={`${styles.darkparagraph} max-w-[480px] tracking-wide`}>
-        {card.content}
-      </p>
+                <p
+                  className={`${styles.darkparagraph} max-w-[480px] tracking-wide`}
+                >
+                  {card.content}
+                </p>
 
-      {/* 👇 Show image below content only on mobile */}
-      <div className="w-full mt-9 block sm:hidden">
-        <img
-          src={card.backgroundImage}
-          alt="Background visual"
-          className="w-full h-auto rounded-[16px]"
-        />
-      </div>
-    </div>
-  ))}
-</div>
-
+                {/* 👇 Show image below content only on mobile */}
+                <div className="w-full mt-9 block sm:hidden">
+                  <img
+                    src={card.backgroundImage}
+                    alt="Background visual"
+                    className="w-full h-auto rounded-[16px]"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

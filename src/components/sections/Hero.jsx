@@ -6,8 +6,10 @@ import Whitebutton from '../Whitebutton'
 function Hero() {
   return (
     <section className="container">
-    <div className="relative w-full h-screen overflow-hidden sm:max-h-[643px]
-    max-h-[678px] rounded-[16px]">
+    {/* <div className="relative w-full h-screen overflow-hidden sm:
+    max-h-[560px] rounded-[16px]"> */}
+    <div className="relative w-full h-[65vh] sm:h-[64vh] md:h-screen overflow-hidden 
+     rounded-[16px] sm:max-h-[720px] md:max-h-[643px]">
     <video
     autoPlay
     loop
@@ -24,9 +26,14 @@ function Hero() {
       background: 'linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)',
     }}
   />
-  <div className="relative z-20 sm:mt-[88px] mt-[40px] sm:mx-[88px] mx-[40px] flex items-start justify-start flex-col h-full">
-    <h1 className={`${styles.heading1} max-w-[700px] mb-3`}>Yields from the world’s top asset managers made accessible.</h1>
-    <p className={`${styles.paragraph} !text-[#F7F9FC] max-w-[360px] sm:mb-14 mb-7`}>The smart gateway to institutional-grade, delta-neutral crypto yields.</p>
+  <div 
+  
+   className="relative mt-16 mx-6 md:mt-[88px] sm:mt-12 sm:mx-10 md:mx-[88px] z-20 flex items-start justify-start flex-col h-full">
+    <h1 
+    
+    
+ className={`${styles.heading1} max-w-[700px] sm:mb-3 mb-1`}>Yields from the world’s top asset managers made accessible.</h1>
+    <p className={`${styles.paragraph} !text-[#F7F9FC] max-w-[360px] sm:mb-14 mb-6`}>The smart gateway to institutional-grade, delta-neutral crypto yields.</p>
     <Whitebutton/>
     <Partners/>
   </div>

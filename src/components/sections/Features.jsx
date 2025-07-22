@@ -60,7 +60,7 @@ function Features() {
           <h2 className={`${styles.heading3}  mb-3`}>
             Engineered to Protect. Designed to Perform.
           </h2>
-          <p className={`${styles.paragraph} max-w-[903px] mb-14`}>
+          <p className={`${styles.paragraph} max-w-[903px] sm:mb-14 mb-6`}>
             We bring together the world’s top investment banks offering
             delta-neutral strategies into a single access point, making it easy
             to tap into institutional-grade returns through one seamless
@@ -68,18 +68,18 @@ function Features() {
           </p>
           <div className="flex flex-wrap justify-between items-center ">
             {cardDetail.map((card) => (
-              <div className="w-[577px] sm:h-[322px] h-[350px] mb-4 bg-white hover:bg-bgBlack transition-all duration-500 sm:p-12 p-6 rounded-2xl group ">
-                <div className="flex items-start flex-col justify-start">
+              <div className="max-w-[465px] sm:max-w-[577px] sm:h-[322px] h-auto mb-4 bg-white hover:bg-bgBlack transition-all duration-500 sm:p-12 p-6 rounded-2xl group ">
+                <div className="flex flex-shrink items-start flex-col justify-start">
                   <img src={card.logo} className="h-[32px] mb-4" />
                   <p className="text-2xl font-[380] mb-2 group-hover:text-white">
                     {card.title}
                   </p>
-                  <p className="text-base font-[380] leading-[140%]  text-black_50 group-hover:text-white/50">
+                  <p className="sm:text-base text-sm font-[380] leading-[140%]  text-black_50 group-hover:text-white/50">
                     {card.description}
                   </p>
 
                   {card.companies && card.companies.length > 0 ? (
-                    <div className="mt-[54px] flex items-center justify-center gap-6">
+                    <div className="sm:mt-[54px] mt-6 flex items-center justify-center gap-6">
                       {card.companies.map((item, idx) => (
                         <img
                           key={idx}
@@ -91,10 +91,10 @@ function Features() {
                     </div>
                   ) : (
                     
-                    <div className="flex gap-2 mt-[39px] justify-start items-center">
-                    <div className="bg-[#FF8170] items-center text-[#1d1d1d] leading-[22.4px font-[380] font-saans rounded-[96px] py-2 px-3 ">U.S APY-4%</div>
-                    <span className="leading-[22.4px] font-[380] font-saans group-hover:text-white">VS</span>
-                    <div className="bg-[#70FFDE] text-[#1d1d1d] leading-[22.4px font-[380] font-saans rounded-[96px] py-2 px-3 ">Multipli APY-12.19%</div>
+                    <div className="flex gap-2 sm:mt-[39px] mt-6 justify-start items-center">
+                    <div className="bg-[#FF8170] items-center text-[#1d1d1d] text-xs sm:text-base leading-[22.4px] font-[380] font-saans rounded-[96px] py-2 px-3 ">U.S APY-4%</div>
+                    <span className="leading-[22.4px] font-[380] font-saans text-xs sm:text-base group-hover:text-white">VS</span>
+                    <div className="bg-[#70FFDE] text-[#1d1d1d] text-xs sm:text-base leading-[22.4px font-[380] font-saans rounded-[96px] py-2 px-3 ">Multipli APY-12.19%</div>
                     </div>
                     
                   )}

@@ -2,7 +2,7 @@ function Button({title}) {
   
 
   return (
-    <button className="group cursor-pointer text-white border border-[#141414] hover:text-[#141414] hover:bg-white hover:border hover:border-[#141414] transition-all duration-500 bg-[#1d1d1d] py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] text-base font-[550] font-saans"
+    <button className="group cursor-pointer text-white border border-[#141414] hover:text-[#141414] hover:bg-white hover:border hover:border-[#141414] transition-all duration-500 bg-[#1d1d1d] py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] sm:text-base text-sm font-[550] font-saans"
       
     >
       <span>

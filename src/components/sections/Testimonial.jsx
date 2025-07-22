@@ -75,16 +75,16 @@ const testimonials = [
 ];
 function Testimonial() {
   return (
-    <section className=" hidden sm:block">
-      <div className="line-container">
+    <section className="">
+      <div className="line-container hidden md:block">
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
         >
-          <h2 className={`${styles.heading3} max-w-[426px]  mb-14`}>
+          <h2 className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-12`}>
             Trusted by startups and the world's largest companies
           </h2>
 
-          <div className="grid font-saans grid-cols-3 gap-4">
+          <div className=" font-saans grid grid-cols-3 gap-4">
             {testimonials.map((item) => (
               <div
                 key={item.id}
@@ -102,16 +102,20 @@ function Testimonial() {
                 : ""
             }
           `}
-              ><div> <p
-                  className={`max-w-[316px] leading-[20px] font-[380] text-[#4A4A4A] ${
-                    item.size === "large"
-                      ? "mb-[290px] text-2xl leading-[26px] tracking-tight font-[570]"
-                      : "mb-[68px] text-base"
-                  }`}
-                >
-                  {item.content}
-                </p></div>
-               
+              >
+                <div>
+                  {" "}
+                  <p
+                    className={`max-w-[316px] leading-[20px] font-[380] text-[#4A4A4A] ${
+                      item.size === "large"
+                        ? "mb-[290px] text-2xl leading-[26px] tracking-tight font-[570]"
+                        : "mb-[68px] text-base"
+                    }`}
+                  >
+                    {item.content}
+                  </p>
+                </div>
+
                 <div className="flex justify-between items-center">
                   <div>
                     <p className="text-black/70 text-base font-[380]">
@@ -123,6 +127,40 @@ function Testimonial() {
                   </div>
                   <div>
                     <img className="rounded-lg" src={item.profile} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className={` line-container md:hidden`}>
+        <div className={`${styles.paddindY} border-x border-containerLine`}>
+          <div className={`${styles.paddindX} `}>
+            <h2 className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-12`}>
+              Trusted by startups and the world's largest companies
+            </h2>
+          </div>
+          <div className="flex w-full overflow-x-auto gap-4  px-4 py-2">
+            {testimonials.map((item) => (
+              <div
+                key={item.id}
+                className="min-w-[345px] max-w-[345px] h-[188px] flex-shrink-0 bg-white rounded-2xl p-4 shadow"
+              >
+                <p className="text-base leading-[18px] text-[#4A4A4A] mb-9 line-clamp-4">
+                  {item.content}
+                </p>
+                <div className="flex justify-between items-center">
+                  <div>
+                    <p className="text-black/70 text-base font-[380]">
+                      {item.name}
+                    </p>
+                    <p className="text-black/70 text-xs font-[380]">
+                      {item.post}
+                    </p>
+                  </div>
+                  <div>
+                    <img className="rounded-lg size-12" src={item.profile} />
                   </div>
                 </div>
               </div>

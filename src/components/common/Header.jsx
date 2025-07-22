@@ -53,7 +53,7 @@ function Header() {
   return (
     <header className="sticky z-50 bg-[#F5F5F5]  top-0 font-saans ">
       <div className= {`mx-auto transition-all duration-300 ${
-          isScrolled ? `sm:px-[8.5rem] px-[1rem] max-w-[1444px] border border-containerLine py-8` : "py-10 line-container"
+          isScrolled ? `sm:px-[8.5rem] px-[1.5rem] max-w-[1444px] border border-containerLine py-6` : "sm:py-10 py-6 line-container"
         }`}>
         <div className="flex justify-between w-full items-center ">
           <a href="#"><img src={logo}  alt="logo" className="max-w-[120px]" /></a>
@@ -100,7 +100,7 @@ function Header() {
           {navItems.map((item, index) => (
             <a href={item.id.startsWith("http") ? item.id : `#${item.id}`}
                   key={index}
-                  className={`relative z-10  text-[16px] font-[380] cursor-pointer py-1 px-[12px] transition-colors active:text-gray-800 duration-300 text-white "
+                  className={`relative z-10 cursor-pointer  text-[16px] font-[380] py-1 px-[12px] transition-colors active:text-gray-800 duration-300 text-white "
                   }`}
                 >
                   {item.title}

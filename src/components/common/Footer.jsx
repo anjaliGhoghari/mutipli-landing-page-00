@@ -40,7 +40,7 @@ function Footer() {
     <footer id="contact" className="border-b border-containerLine bg-[#F5F5F5] ">
       <div className="container ">
         <div
-          className={`${styles.paddindX} sm:pt-[128px] pt-[64px] border-x border-containerLine`}
+          className={`${styles.paddindX} md:pt-[128px] sm:pt-[94px] pt-[64px] border-x border-containerLine`}
         >
           <a href="#"><img src={logo}  alt="logo" className="max-w-[120px] sm:mb-12 mb-8 " /></a>
           <h2
@@ -52,7 +52,7 @@ function Footer() {
             The smart gateway to institutional-grade,<br/> delta-neutral crypto
             yields.
           </p>
-          <div className="flex sm:items-center items-start  justify-between flex-col sm:gap-2 gap-9 lg:flex-row">
+          <div className="flex md:items-start items-start  justify-between flex-col sm:gap-6 gap-9 lg:flex-row">
             <div className="flex flex-col ss:flex-row justify-end gap-6 sm:gap-8">
               {footerLinks.map((link, index) => {
                 if (index % 4 === 0) {
