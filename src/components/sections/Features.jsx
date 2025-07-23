@@ -57,19 +57,20 @@ function Features() {
         <div
           className={`${styles.paddindX} ${styles.paddindY} font-saans border-x border-containerLine`}
         >
-          <h2 className={`${styles.heading3}  mb-3`}>
+          <h2 data-aos="fade-up" className={`${styles.heading3}  mb-3`}>
             Engineered to Protect. Designed to Perform.
           </h2>
-          <p className={`${styles.paragraph} max-w-[903px] sm:mb-14 mb-6`}>
+          <p data-aos="fade-up" className={`${styles.paragraph} max-w-[903px] sm:mb-14 mb-6`}>
             We bring together the world’s top investment banks offering
             delta-neutral strategies into a single access point, making it easy
             to tap into institutional-grade returns through one seamless
             tokenized platform.
           </p>
-          <div className="flex flex-wrap justify-between items-center ">
+          <div className="flex flex-wrap gap-3 justify-between items-start">
             {cardDetail.map((card) => (
-              <div className="max-w-[465px] sm:max-w-[577px] sm:h-[322px] h-auto mb-4 bg-white hover:bg-bgBlack transition-all duration-500 sm:p-12 p-6 rounded-2xl group ">
-                <div className="flex flex-shrink items-start flex-col justify-start">
+                       <div data-aos="zoom-in" className="w-full sm:max-w-[577px] max-w-[465px] md:w-[calc(50%-0.5rem)] lg:max-h-[323px] max-h-[370px] h-auto mb-3 bg-white hover:bg-bgBlack transition-all duration-500 p-6 sm:p-7 md:p-8 lg:p-12 rounded-2xl group">
+
+                <div className="flex items-start flex-col justify-start">
                   <img src={card.logo} className="h-[32px] mb-4" />
                   <p className="text-2xl font-[380] mb-2 group-hover:text-white">
                     {card.title}

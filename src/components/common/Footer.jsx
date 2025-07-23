@@ -43,21 +43,24 @@ function Footer() {
           className={`${styles.paddindX} md:pt-[128px] sm:pt-[94px] pt-[64px] border-x border-containerLine`}
         >
           <a href="#"><img src={logo}  alt="logo" className="max-w-[120px] sm:mb-12 mb-8 " /></a>
-          <h2
+          <h2 data-aos="fade-up"
             className={`font-saans font-[570] text-black_90 sm:text-[40px] text-[32px]  sm:leading-[48px] leading-[38px]   max-w-[633px]  mb-3`}
           >
             Yields from the world’s top asset managers made accessible.
           </h2>
-          <p className={`${styles.paragraph} sm:mb-[88px] mb-10 `}>
+          <p data-aos="fade-up" className={`${styles.paragraph} sm:mb-[88px] mb-10 `}>
             The smart gateway to institutional-grade,<br/> delta-neutral crypto
             yields.
           </p>
           <div className="flex md:items-start items-start  justify-between flex-col sm:gap-6 gap-9 lg:flex-row">
-            <div className="flex flex-col ss:flex-row justify-end gap-6 sm:gap-8">
+            <div  className="flex flex-col ss:flex-row justify-end gap-6 sm:gap-8">
               {footerLinks.map((link, index) => {
                 if (index % 4 === 0) {
                   return (
                     <div
+                     data-aos="fade-right"
+                      data-aos-offset="50"
+                      data-aos-easing="ease-in-sine"
                       key={index}
                       className="flex flex-col gap-4 min-w-[250px]"
                     >
@@ -76,7 +79,9 @@ function Footer() {
                 return null;
               })}
             </div>
-            <div>
+            <div data-aos="fade-left"
+                      data-aos-offset="50"
+                      data-aos-easing="ease-in-sine">
               <p className="text-left font-normal text-[#4A4A4A] mb-6 text-[20px]">
                 How can we help you?
               </p>

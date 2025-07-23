@@ -36,15 +36,18 @@ export default {
     },
   },
   plugins: [
-    // ✅ Custom paused utility
-    function ({ addUtilities }) {
-      addUtilities({
-        ".paused": {
-          "animation-play-state": "paused",
-        },
-      });
-    },
-  ],
+  require('tailwindcss-motion'),
+  
+  // ✅ Custom .paused utility
+  function ({ addUtilities }) {
+    addUtilities({
+      '.paused': {
+        'animation-play-state': 'paused',
+      },
+    })
+  },
+],
+
 }
 
 

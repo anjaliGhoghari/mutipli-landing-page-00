@@ -80,13 +80,13 @@ function Testimonial() {
         <div
           className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
         >
-          <h2 className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-12`}>
+          <h2 data-aos="fade-up" className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-12`}>
             Trusted by startups and the world's largest companies
           </h2>
 
           <div className=" font-saans grid grid-cols-3 gap-4">
             {testimonials.map((item) => (
-              <div
+              <div data-aos="zoom-in"
                 key={item.id}
                 className={`
             rounded-2xl flex flex-col justify-between
@@ -141,27 +141,27 @@ function Testimonial() {
               Trusted by startups and the world's largest companies
             </h2>
           </div>
-          <div className="flex w-full overflow-x-auto gap-4  px-4 py-2">
+          <div className="w-full overflow-x-auto flex gap-4 px-4 py-4 snap-x snap-mandatory  no-scrollbar scroll-smooth">
             {testimonials.map((item) => (
               <div
                 key={item.id}
-                className="min-w-[345px] max-w-[345px] h-[188px] flex-shrink-0 bg-white rounded-2xl p-4 shadow"
+                className="min-w-[300px] max-w-[300px] h-[200px] bg-white rounded-2xl shadow-md p-4 flex flex-col justify-between snap-start transform transition-transform duration-300 hover:scale-[1.02]"
               >
-                <p className="text-base leading-[18px] text-[#4A4A4A] mb-9 line-clamp-4">
+                <p className="text-black/80 text-sm leading-snug line-clamp-4">
                   {item.content}
                 </p>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-4">
                   <div>
-                    <p className="text-black/70 text-base font-[380]">
+                    <p className="text-black font-semibold text-sm">
                       {item.name}
                     </p>
-                    <p className="text-black/70 text-xs font-[380]">
-                      {item.post}
-                    </p>
+                    <p className="text-black/50 text-xs">{item.post}</p>
                   </div>
-                  <div>
-                    <img className="rounded-lg size-12" src={item.profile} />
-                  </div>
+                  <img
+                    src={item.profile}
+                    alt={item.name}
+                    className="w-10 h-10 rounded-lg object-cover"
+                  />
                 </div>
               </div>
             ))}

@@ -30,10 +30,10 @@ function TestedBySection() {
         <div className="border-x border-containerLine py-16 sm:py-12">
           <div className={`md:py-[88px] sm:py-[72px] py-16 bg-bgBlack  rounded-[16px]`}>
             <div className={`${styles.paddindX}`}>
-              <h2 className={`${styles.darkheading3} text-[40px]  mb-3`}>
+              <h2 data-aos="fade-up" className={`${styles.darkheading3} text-[40px]  mb-3`}>
                 Along with the best
               </h2>
-              <p className={`${styles.darkparagraph} max-w-[426px] mb-7 sm:mb-[87px]`}>
+              <p data-aos="fade-up" className={`${styles.darkparagraph} max-w-[426px] mb-7 sm:mb-[87px]`}>
                 Leading blockchain networks, top DeFi protocols, and
                 institutional players support Multipli’s xTokens
               </p>

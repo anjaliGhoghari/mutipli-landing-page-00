@@ -109,8 +109,10 @@ body {
 
 }
 
-.scroll-visible {
-  scrollbar-width: auto;        /* Firefox */
-  scrollbar-color: #e975f5 #cc2323;
-  
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

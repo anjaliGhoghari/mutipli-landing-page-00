@@ -5,7 +5,7 @@ function Banner() {
     <>
         <section className="sticky font-saans z-60 bg-[#F5F5F5] top-0">
             <div className='container'>
-                <div className='bg-bgBlack sm:p-2 py-3 px-4 rounded-b-[16px] text-[10px] sm:text-base flex tracking-wide items-center justify-center text-white'>Deploy assets before October 10 to get 2x ORBs.
+                <div className=' bg-bgBlack sm:p-2 py-3 px-4 rounded-b-[16px] text-[10px] sm:text-base flex tracking-wide items-center justify-center text-white'>Deploy assets before October 10 to get 2x ORBs.
                 <a href='#' className='underline ml-2'>Learn more</a>
                 </div>
                

@@ -41,8 +41,9 @@ function Partners() {
     <div className="flex flex-wrap items-center justify-between w-full sm:mt-[86px] mt-16">
                 {partners.map((partners) => (
                   <div
-                    key={partners.id}
-                    className="flex justify-start items-start flex-1 mr-3 min-w-[120px]"
+                   data-aos="zoom-in"
+                  key={partners.id}
+                  className="flex justify-start items-start flex-1 mr-3 min-w-[120px]"
                   >
                     <img
                       src={partners.logo}

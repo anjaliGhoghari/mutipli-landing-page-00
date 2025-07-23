@@ -26,15 +26,11 @@ function Hero() {
       background: 'linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)',
     }}
   />
-  <div 
-  
+  <div
    className="relative mt-16 mx-6 md:mt-[88px] sm:mt-12 sm:mx-10 md:mx-[88px] z-20 flex items-start justify-start flex-col h-full">
-    <h1 
-    
-    
- className={`${styles.heading1} max-w-[700px] sm:mb-3 mb-1`}>Yields from the world’s top asset managers made accessible.</h1>
-    <p className={`${styles.paragraph} !text-[#F7F9FC] max-w-[360px] sm:mb-14 mb-6`}>The smart gateway to institutional-grade, delta-neutral crypto yields.</p>
-    <Whitebutton/>
+    <h1   data-aos="fade-up" className={`${styles.heading1} max-w-[700px] sm:mb-3 mb-1`}>Yields from the world’s top asset managers made accessible.</h1>
+    <p   data-aos="fade-up" className={`${styles.paragraph} !text-[#F7F9FC] max-w-[360px] sm:mb-14 mb-6`}>The smart gateway to institutional-grade, delta-neutral crypto yields.</p>
+    <div className='motion-preset-pulse motion-duration-2000'><Whitebutton/></div>
     <Partners/>
   </div>
     </div>

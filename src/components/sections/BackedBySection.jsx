@@ -18,15 +18,15 @@ function BackedBySection() {
     className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-[96px] bg-no-repeat bg-right hidden sm:block`}
     style={{ backgroundImage: `url(${Backedbysection})` }}
   >
-    <h2 className={`${styles.darkheading3} mb-3`}>Backed by the best</h2>
-    <p className={`${styles.darkparagraph} leading-normal sm:mb-14 mb-12`}>
+    <h2 data-aos="fade-up" className={`${styles.darkheading3} mb-3`}>Backed by the best</h2>
+    <p data-aos="fade-up" className={`${styles.darkparagraph} max-w-[300px] md:max-w-full leading-normal sm:mb-14 mb-12`}>
       Multipli is building the future of high grade institutional yields.
     </p>
-    <div className="flex sm:gap-14 gap-7 flex-wrap items-center justify-start">
-      <img src={sequola} />
-      <img src={spartan} />
-      <img src={pantera} />
-      <img src={starkware} />
+    <div  className="flex sm:gap-14 gap-7 flex-wrap items-center justify-start max-w-[400px] md:max-w-full ">
+      <img  data-aos="zoom-in" src={sequola} />
+      <img  data-aos="zoom-in" src={spartan} />
+      <img  data-aos="zoom-in" src={pantera} />
+      <img  data-aos="zoom-in" src={starkware} />
     </div>
   </div>
 
