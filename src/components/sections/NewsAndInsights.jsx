@@ -60,9 +60,9 @@ function NewsAndInsights() {
   }, [activeIndex]);
   return (
     <section id="blogs" className="">
-      <div className="line-container">
+      <div className="container">
         <div
-          className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine `}
+          className={`${styles.paddindX} ${styles.paddindY} `}
         >
           <div className="flex justify-between items-center sm:mb-12 mb-8">
             <div className="relative">

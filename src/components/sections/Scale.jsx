@@ -17,19 +17,23 @@ function Scale() {
   return (
     <>
       <section ref={ref} className="">
-        <div className="line-container ">
-          <div className="border-x border-containerLine py-16 sm:py-12">
+        <div className="container ">
+          <div className=" py-16 sm:py-12">
           <div className={`${styles.paddindX} bg-bgBlack rounded-[16px] py-16 md:py-20 sm:py-18 `}>
-              <h2 data-aos="fade-up" className={`${styles.darkheading3}  mb-3`}>
+              <h2 data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="900" className={`${styles.darkheading3}  mb-3`}>
                 Built for stability. Designed for scale. Open to all.
               </h2>
               <p data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="900"
                 className={`${styles.darkparagraph} mb-14`}
               >
                 Multipli is building the future of high grade institutional
                 yields.
               </p>
-              <div className="flex justify-between items-center flex-wrap">
+              <div className="flex flex-col sm:flex-row items-start justify-between sm:items-center flex-wrap">
                 <div
                   data-aos="zoom-in"
                   className=" flex items-start flex-col m-5 sm:m-0"

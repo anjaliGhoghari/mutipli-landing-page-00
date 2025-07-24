@@ -36,8 +36,8 @@ const highlightcard = [
 function HighlightSections() {
   return (
     <section className="relative ">
-      <div className="line-container hidden md:block ">
-        <div className="border-x border-containerLine sm:py-12 py-6">
+      <div className="container hidden md:block ">
+        <div className=" sm:py-12 py-6">
           <div className="space-y-12 h-auto relative">
             {highlightcard.map((card, idx) => (
               <div

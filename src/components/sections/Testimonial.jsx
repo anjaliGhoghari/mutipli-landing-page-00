@@ -76,17 +76,21 @@ const testimonials = [
 function Testimonial() {
   return (
     <section className="">
-      <div className="line-container hidden md:block">
+      <div className="container hidden md:block">
         <div
-          className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
+          className={`${styles.paddindX} ${styles.paddindY}`}
         >
-          <h2 data-aos="fade-up" className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-12`}>
+          <h2 data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="900" className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-12`}>
             Trusted by startups and the world's largest companies
           </h2>
 
           <div className=" font-saans grid grid-cols-3 gap-4">
-            {testimonials.map((item) => (
-              <div data-aos="zoom-in"
+            {testimonials.map((item,idx) => (
+              <div data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration={idx * 180}
                 key={item.id}
                 className={`
             rounded-2xl flex flex-col justify-between

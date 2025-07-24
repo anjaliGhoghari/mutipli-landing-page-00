@@ -38,17 +38,19 @@ import Rockaway from "../../assets/icons/Rockaway.svg";
 
 function Partners() {
   return (
-    <div className="flex flex-wrap items-center justify-between w-full sm:mt-[86px] mt-16">
+    <div className="flex flex-wrap items-center justify-between w-full sm:mt-[86px] mt-12">
                 {partners.map((partners) => (
                   <div
-                   data-aos="zoom-in"
+                   data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-duration="800"
                   key={partners.id}
                   className="flex justify-start items-start flex-1 mr-3 min-w-[120px]"
                   >
                     <img
                       src={partners.logo}
                       alt={`Logo of ${partners.id}`}
-                      className="min-w-[118px]"
+                      className="min-w-[118px] mt-4 sm:mt-0"
                     />
                   </div>
                 ))}

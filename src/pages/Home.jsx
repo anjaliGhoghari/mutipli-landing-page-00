@@ -7,13 +7,14 @@ import TestedBySection from '../components/sections/TestedBySection'
 import BackedBySection from '../components/sections/BackedBySection'
 import Testimonial from '../components/sections/Testimonial'
 import NewsAndInsights from '../components/sections/NewsAndInsights'
-import HighlightSections from '../components/sections/HighlightSections'
+// import HighlightSections from '../components/sections/HighlightSections'
+import HighlightLoaderSection from '../components/sections/HighlightLoaderSection'
 
 function Home() {
   return (
    <>
-    <Hero/>
-    <HighlightSections/>
+    <HighlightLoaderSection/>
+    {/* <HighlightSections/> */}
     <Scale/>
     <Features/>
     <GraphSection/>

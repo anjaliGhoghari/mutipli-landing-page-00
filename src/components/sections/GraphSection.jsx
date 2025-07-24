@@ -27,23 +27,29 @@ const buttons =[
 function GraphSection() {
   return (
     <section className="">
-      <div className="line-container">
+      <div className="container">
         <div
-          className={`${styles.paddindX} ${styles.paddindY} border-x border-containerLine`}
+          className={`${styles.paddindX} ${styles.paddindY}`}
         >
           <div className="flex items-center justify-between">
             <div className="">
               <div className="flex gap-2 mb-8 items-center">
                 {buttons.map((btn,idx)=>(
-                  <a data-aos="zoom-in" id={idx} className="flex gap-2  hover:scale-110 transition-all duration-300 cursor-pointer bg-bgBlack text-white/90 py-2 pr-3 pl-2 rounded-[56px]" >
+                  <a data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000" id={idx} className="flex gap-2  hover:scale-110 transition-all duration-300 cursor-pointer bg-bgBlack text-white/90 py-2 pr-3 pl-2 rounded-[56px]" >
                     <img className=" inline h-[18px] sm:h-full" src={btn.logo}/> <p className="text-sm sm:text-base">{btn.title}</p>
                   </a>
                 ))}
               </div>
-              <h2 data-aos="fade-up" className={`${styles.heading3}  max-w-[426px] mb-3`}>
+              <h2 data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="900" className={`${styles.heading3}  max-w-[426px] mb-3`}>
                 Risk Adjusted Daily Yield, xUSDC 12.13% APY
               </h2>
-              <p data-aos="fade-up" className={`${styles.paragraph} max-w-[426px] mb-14`}>
+              <p data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="900" className={`${styles.paragraph} max-w-[426px] mb-14`}>
                 xTokens are the world’s first transferable tokens backed by top
                 delta-neutral funds, earning daily yield and enabling secure
                 DeFi staking for more returns.

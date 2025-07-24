@@ -1,6 +1,4 @@
 @import "./styles/fonts.css";
-@plugin "daisyui";
-
 
 @tailwind base;
 @tailwind components;
@@ -29,30 +27,13 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 1444px;
-  
-  border-inline :1px solid var(--containerLine);
   @media (min-width: 768px) {
     padding-left: 3rem;
     padding-right: 3rem;
   }
  
 }
-.line-container{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1444px;
-  border-bottom: 1px solid var(--containerLine);
-  border-inline :1px solid var(--containerLine);
-  @media (min-width: 768px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
- 
-}
+
 .bg-black-gradient {
     background: linear-gradient(144.39deg,
             #ffffff -278.56%,
@@ -90,6 +71,28 @@ body {
 
   
 
+.loader{
+  position: relative;
+  overflow: hidden;
+}
+.loader::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0%;
+  height: 100%;
+  background-color: #C48BEF;
+  animation: loader 10s linear infinite;
+}
+@keyframes loader {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
 
 
 .new-button {
@@ -116,3 +119,4 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+

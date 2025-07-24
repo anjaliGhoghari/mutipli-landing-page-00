@@ -2,13 +2,13 @@ function Button({title}) {
   
 
   return (
-    <button className="group cursor-pointer text-white border border-[#141414] hover:text-[#141414] hover:bg-white hover:border hover:border-[#141414] transition-all duration-500 bg-[#1d1d1d] py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] sm:text-base text-sm font-[550] font-saans"
+    <button className="group cursor-pointer text-black border border-black hover:text-white hover:bg-transparent hover:border hover:border-white transition-all duration-500 bg-white py-[6px] flex items-center pr-[6px] leading-[20px] pl-3 rounded-[32px] tracking-[-0.16px] sm:text-base text-sm font-[550] font-saans"
       
     >
       <span>
        {title}
         <svg
-          className={`inline font-saans transition-all duration-700 fill-white group-hover:fill-black
+          className={`inline font-saans transition-all duration-700 fill-black group-hover:fill-white
           `}
           width="20"
           height="20"

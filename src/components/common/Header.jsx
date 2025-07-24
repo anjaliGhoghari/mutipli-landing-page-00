@@ -41,28 +41,30 @@ function Header() {
     }
   }, [activeIndex]);
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
   
-    useEffect(() => {
-      const onScroll = () => {
-        setIsScrolled(window.scrollY > 50);
-      };
-      window.addEventListener("scroll", onScroll);
-      return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+    // useEffect(() => {
+    //   const onScroll = () => {
+    //     setIsScrolled(window.scrollY > 50);
+    //   };
+    //   window.addEventListener("scroll", onScroll);
+    //   return () => window.removeEventListener("scroll", onScroll);
+    // }, []);
   return (
-    <header className="sticky z-50 bg-[#F5F5F5]  top-0 font-saans ">
-      <div className= {`mx-auto transition-all duration-300 ${
-          isScrolled ? `sm:px-[8.5rem] px-[1.5rem] max-w-[1444px] border border-containerLine py-6` : "sm:py-10 py-6 line-container"
-        }`}>
+    <header className="relative z-20 font-saans   ">
+    {/* <header className="sticky z-50 bg-[#F5F5F5]  top-0 font-saans "> */}
+      <div className= {`mx-auto transition-all duration-300 sm:py-10 py-6 container`}>
+        {/* <div className= {`mx-auto transition-all duration-300 ${
+          isScrolled ? `sm:px-[8.5rem] px-[1.5rem] max-w-[1444px] py-6` : "sm:py-10 py-6 container"
+        }`}> */}
         <div className="flex justify-between w-full items-center ">
-          <a href="#"><img src={logo}  alt="logo" className="max-w-[120px]" /></a>
+          <a href="#"><img src={logo}  alt="logo" className="sm:w-[120px] w-full " /></a>
           
           <nav className="relative">
             <div className="relative flex gap-2">
               {/* Sliding Box */}
               <div
-                className="absolute bottom-[0px] hidden lg:block h-8 bg-black rounded-[32px] transition-all duration-300"
+                className="absolute bottom-[0px] hidden lg:block h-8 bg-white rounded-[32px] transition-all duration-300"
                 style={{
                   width: `${boxStyle.width}px`,
                   left: `${boxStyle.left}px`,
@@ -71,14 +73,14 @@ function Header() {
 
               {/* Nav Items */}
               {navItems.map((item, index) => (
-                <a  data-aos="zoom-in" href={item.id.startsWith("http") ? item.id : `#${item.id}`}
+                <a  href={item.id.startsWith("http") ? item.id : `#${item.id}`}
                   key={index}
                   ref={(el) => (navRefs.current[index] = el)}
                   onClick={() => setActiveIndex(index)}
                   className={`relative z-10 hidden lg:flex text-[16px] font-[380] cursor-pointer py-1 px-[12px] transition-colors duration-300 ${
                     activeIndex === index
-                      ? "text-white"
-                      : "text-[#797979] hover:text-bgBlack"
+                      ? "text-black"
+                      : "text-white hover:text-white/65"
                   }`}
                 >
                   {item.title}
