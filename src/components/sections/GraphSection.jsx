@@ -33,7 +33,7 @@ function GraphSection() {
         >
           <div className="flex items-center justify-between">
             <div className="">
-              <div className="flex gap-2 mb-8 items-center">
+              <div className="flex flex-wrap sm:flex-nowrap gap-2 mb-8 items-center">
                 {buttons.map((btn,idx)=>(
                   <a data-aos="fade-up"
               data-aos-delay="400"

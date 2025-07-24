@@ -115,7 +115,7 @@ function Features() {
                 data-aos="fade-up"
                 data-aos-delay="0"
                 data-aos-duration={idx * 180}
-                className="w-full sm:max-w-[577px] max-w-[465px] md:w-[calc(50%-0.5rem)] lg:max-h-[323px] max-h-[370px] h-auto mb-3 bg-white hover:bg-bgBlack transition-all duration-500 p-6 sm:p-7 md:p-8 lg:p-12 rounded-2xl group"
+                className="w-full sm:max-w-[577px] max-w-[465px] md:w-[calc(50%-0.5rem)] lg:max-h-[323px] max-h-[426px] h-auto mb-3 bg-white hover:bg-bgBlack transition-all duration-500 p-6 sm:p-7 md:p-8 lg:p-12 rounded-2xl group"
               >
                 <div className="flex items-start flex-col justify-start">
                   {card.logo}
@@ -127,7 +127,7 @@ function Features() {
                   </p>
 
                   {card.companies && card.companies.length > 0 ? (
-                    <div className="sm:mt-[54px] mt-6 flex items-center justify-center gap-6">
+                    <div className="sm:mt-[54px] mt-6 flex items-center flex-wrap md:flex-nowrap justify-center gap-6">
                       {card.companies.map((item, idx) => (
                         <img
                           key={idx}
@@ -138,7 +138,7 @@ function Features() {
                       ))}
                     </div>
                   ) : (
-                    <div className="flex gap-2 sm:mt-[39px] mt-6 justify-start items-center">
+                    <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:mt-[39px] mt-6 justify-start items-center">
                       <div className="bg-[#8E8E8E] items-center text-[#1d1d1d] text-xs sm:text-base leading-[22.4px] font-[380] font-saans rounded-[96px] py-2 px-3 ">
                         U.S APY-4%
                       </div>

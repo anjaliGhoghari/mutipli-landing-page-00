@@ -42,7 +42,7 @@ function Scale() {
                     <CountUp
                       end={10}
                       duration={10}
-                      className={`${styles.darkheading1} mb-3`}
+                      className={`${styles.darkheading1} text-[32px] sm:text-inherit sm:text-white mb-3`}
                     />
                   ) : (
                     <span className="text-5xl font-bold text-white mb-3">
@@ -59,7 +59,7 @@ function Scale() {
                     <CountUp
                       end={80}
                       duration={10}
-                      className={`${styles.darkheading1} mb-3`}
+                      className={`${styles.darkheading1} text-[32px] sm:text-inherit sm:text-white mb-3`}
                     />
                   ) : (
                     <span className="text-5xl font-bold text-white mb-3">
@@ -78,7 +78,7 @@ function Scale() {
                       duration={10}
                       decimals={2}
                       suffix="%"
-                      className={`${styles.darkheading1} mb-3`}
+                      className={`${styles.darkheading1} text-[32px] sm:text-inherit sm:text-white mb-3`}
                     />
                   ) : (
                     <div className="flex items-baseline mb-3">
@@ -100,7 +100,7 @@ function Scale() {
                       duration={10}
                       prefix="$"
                       suffix="M"
-                      className={`${styles.darkheading1} mb-3`}
+                      className={`${styles.darkheading1} text-[32px] sm:text-inherit sm:text-white mb-3`}
                     />
                   ) : (
                     <span className="text-5xl font-bold text-white mb-3">

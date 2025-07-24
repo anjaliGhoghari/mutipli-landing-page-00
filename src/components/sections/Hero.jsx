@@ -13,8 +13,8 @@ function Hero() {
         {/* <div className="relative w-full h-screen overflow-hidden sm:
     max-h-[560px] rounded-[16px]"> */}
         <div
-          className="relative w-full h-[84vh]  sm:h-[80vh] md:h-screen overflow-hidden 
-      sm:max-h-[750px] md:max-h-[845px]"
+          className="relative w-full h-full md:h-screen overflow-hidden 
+      sm:max-h-[850px] md:max-h-[845px]"
         >
           <video
             autoPlay
@@ -35,7 +35,7 @@ function Hero() {
           />
           <Banner/>
           <Header/>
-          <div className="relative mt-12 mx-6 md:mt-[88px] sm:mt-12 container z-20 flex items-start justify-start flex-col h-full">
+          <div className="relative mt-12 mb-12 md:mb-0 mx-6 md:mt-[88px] sm:mt-12 container z-20 flex items-start justify-start flex-col h-full">
             <h1
               data-aos="fade-up"
               data-aos-delay="400"

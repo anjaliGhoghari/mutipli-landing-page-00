@@ -138,10 +138,11 @@ function Testimonial() {
           </div>
         </div>
       </div>
+      {/* mobile version */}
       <div className={` line-container md:hidden`}>
         <div className={`${styles.paddindY} border-x border-containerLine`}>
           <div className={`${styles.paddindX} `}>
-            <h2 className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-12`}>
+            <h2 className={`${styles.heading3} max-w-[426px]  sm:mb-14 mb-6`}>
               Trusted by startups and the world's largest companies
             </h2>
           </div>
@@ -149,7 +150,7 @@ function Testimonial() {
             {testimonials.map((item) => (
               <div
                 key={item.id}
-                className="min-w-[300px] max-w-[300px] h-[200px] bg-white rounded-2xl shadow-md p-4 flex flex-col justify-between snap-start transform transition-transform duration-300 hover:scale-[1.02]"
+                className="min-w-[300px] max-w-[300px] h-[200px] bg-white rounded-2xl shadow-sm p-4 flex flex-col justify-between snap-start transform transition-transform duration-300 hover:scale-[1.02]"
               >
                 <p className="text-black/80 text-sm leading-snug line-clamp-4">
                   {item.content}
