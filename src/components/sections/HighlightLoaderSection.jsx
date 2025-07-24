@@ -63,9 +63,7 @@ const HighlightLoaderSection = () => {
   return (
     <section className={`${styles.paddindY}`}>
       <div className="container">
-        <div data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="900"  className="flex flex-col sm:flex-row  items-center justify-between">
+        <div  className="flex flex-col sm:flex-row  items-center justify-between">
           {/* Left Section: Text Steps */}
           <div  className="flex  flex-col gap-11 w-full sm:w-[55%]">
             {steps.map((step, idx) => (
