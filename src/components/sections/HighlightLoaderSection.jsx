@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../../styles/style";
 import highlightloader_1 from "../../assets/icons/highlightloader-1.svg";
 import highlightloader_2 from "../../assets/icons/highlightloader-2.svg";
@@ -27,7 +27,7 @@ const steps = [
 const StepText = ({ title, description, active }) => {
   return (
     <div
-      className={`transition-all duration-500 ${
+      className={` ${
         active ? "text-black/90" : "text-black/10"
       }`}
     >
@@ -60,6 +60,15 @@ const HighlightLoaderSection = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const imageRef = useRef(null);
+
+useEffect(() => {
+  if (imageRef.current) {
+    imageRef.current.classList.remove("opacity-0");
+    imageRef.current.classList.add("opacity-100");
+  }
+}, [currentStep]);
+
   return (
     <section className={`${styles.paddindY}`}>
       <div className="container">
@@ -77,12 +86,12 @@ const HighlightLoaderSection = () => {
           </div>
 
            <div className="flex  justify-center mt-14 sm:mt-0">
-            <img
-              key={currentStep}
-              src={steps[currentStep].image}
-              alt={`Diagram ${currentStep + 1}`}
-              className="animate-pixelSwap"
-            />
+           <img
+                ref={imageRef}
+                src={steps[currentStep].image}
+                alt={`Diagram ${currentStep + 1}`}
+                className={`transition-opacity duration-1000 ease-in-out 
+                            opacity-100 blur-0`}/>
           </div>
         </div>
       </div>
